@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREAM</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative; color: rgb(201, 123, 190); font-size: 2em; text-align: center; z-index: 1;">
+        <h1 style="font-family: 'Comic Sans MS', 'Trebuchet MS', cursive; font-weight: bold; letter-spacing: 2px;">Goodnight<img id="dem" src="https://github.com/GodjiKung/yux_pp/blob/main/nuea.png?raw=true" style="height: 80px; width: auto; vertical-align: middle;"></h1>
+        <img id="pic" src="https://github.com/GodjiKung/yux_pp/blob/main/yux_pp.png?raw=true" alt="description">
+
+        <audio id="audio" loop>
+    <source src="https://raw.githubusercontent.com/GodjiKung/yux_pp/main/THAISUB%20All%20I%20Ever%20Need%20-%20Austin%20Mahone.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        audio.volume = 0.3;
+
+        document.getElementById('pic').addEventListener('click', function() {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
